@@ -22,6 +22,6 @@ jobs:
       - name: Show jyu.demo.rabbitmq.App file lsit
         run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
       - name: Restore dependencies - jyu.demo.rabbitmq.App
-        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App/jyu.demo.rabbitmq.App
+        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
       - name: Build jyu.demo.rabbitmq.App
-        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App/jyu.demo.rabbitmq.App --no-restore
+        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App --no-restore
