@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31512.422
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jyu.demo.rabbitmq.App", "jyu.demo.rabbitmq.App", "{01F7C64C-BCBE-4FBE-9F4F-874644110CC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jyu.demo.rabbitmq.Init", "jyu.demo.rabbitmq.Init", "{BCDC72A1-5DBF-4218-AD21-537A36AEB2E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jyu.demo.rabbitmq.Utilities", "jyu.demo.rabbitmq.Utilities", "{F7F93B8A-8BE1-4689-974D-6031424310CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jyu.demo.rabbitmq.Init", "jyu.demo.rabbitmq.Init\jyu.demo.rabbitmq.Init.csproj", "{B7569F23-7E52-485A-81DB-E853AE994925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jyu.demo.rabbitmq.Utilities", "jyu.demo.rabbitmq.Utilities\jyu.demo.rabbitmq.Utilities.csproj", "{F1FC0500-4889-4901-959F-672598CD3F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jyu.demo.rabbitmq.App", "jyu.demo.rabbitmq.App\jyu.demo.rabbitmq.App.csproj", "{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7569F23-7E52-485A-81DB-E853AE994925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7569F23-7E52-485A-81DB-E853AE994925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7569F23-7E52-485A-81DB-E853AE994925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7569F23-7E52-485A-81DB-E853AE994925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FC0500-4889-4901-959F-672598CD3F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FC0500-4889-4901-959F-672598CD3F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC0500-4889-4901-959F-672598CD3F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FC0500-4889-4901-959F-672598CD3F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7569F23-7E52-485A-81DB-E853AE994925} = {BCDC72A1-5DBF-4218-AD21-537A36AEB2E9}
+		{F1FC0500-4889-4901-959F-672598CD3F5E} = {F7F93B8A-8BE1-4689-974D-6031424310CC}
+		{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1} = {01F7C64C-BCBE-4FBE-9F4F-874644110CC6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CD92012-568E-436F-9006-FFDF006FEDEF}
+	EndGlobalSection
+EndGlobal
