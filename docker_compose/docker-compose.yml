@@ -20,7 +20,7 @@ services:
     image: "rabbitmq:3-management-alpine"
     ports: 
       - "15672:15672"
-      - "5676:5672"
+      - "5672:5672"
     environment: 
         - RABBITMQ_DEFAULT_USER=root
         - RABBITMQ_DEFAULT_PASS=1234
