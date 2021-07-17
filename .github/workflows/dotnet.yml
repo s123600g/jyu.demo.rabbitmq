@@ -3,8 +3,8 @@ name: .NET
 on:
   push:
     branches: [ main ]
-  #pull_request:
-   #branches: [ main ]
+  pull_request:
+   branches: [ main ]
 
 jobs:
   build:
@@ -25,3 +25,17 @@ jobs:
         run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
       - name: Build jyu.demo.rabbitmq.App
         run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App --no-restore
+  
+      - name: Show jyu.demo.rabbitmq.Init file lsit
+        run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Init
+      - name: Restore dependencies - jyu.demo.rabbitmq.Init
+        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Init
+      - name: Build jyu.demo.rabbitmq.Init
+        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Init --no-restore
+
+      - name: Show jyu.demo.rabbitmq.Utilities file lsit
+        run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities
+      - name: Restore dependencies - jyu.demo.rabbitmq.Utilities
+        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities
+      - name: Build jyu.demo.rabbitmq.Utilities
+        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities --no-restore
