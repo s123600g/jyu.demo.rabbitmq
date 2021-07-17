@@ -1,0 +1,1 @@
+# jyu.demo.rabbitmq
