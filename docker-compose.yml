@@ -1,0 +1,30 @@
+version: '3.4'
+
+####################################################################
+# The block are defined the basic services. 
+# If you want to add some configuration options, 
+# You should add configuration options to 'docker-compose.override.yml'
+####################################################################
+
+networks: 
+  BaseRMQNetWork:
+      driver: bridge
+      ipam:
+          driver: default
+          config: 
+              - subnet: 172.30.0.0/16
+services: 
+    
+  rabbitmq:
+    container_name: "BaseRMQ-rabbitmq"
+    image: "rabbitmq:3-management-alpine"
+    ports: 
+      - "15672:15672"
+      - "5676:5672"
+    environment: 
+        - RABBITMQ_DEFAULT_USER=root
+        - RABBITMQ_DEFAULT_PASS=1234
+    networks: 
+      - BaseRMQNetWork
+
+        
