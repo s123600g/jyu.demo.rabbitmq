@@ -52,10 +52,19 @@ namespace jyu.demo.rabbitmq.Init.InitializeSettings
             return config;
         }
 
+        /// <summary>
+        /// 取得IConfiguration 實體。
+        /// </summary>
+        /// <returns></returns>
         public IConfiguration GetConfiguration()
         {
             return _config;
         }
+
+        /// <summary>
+        /// NLog 載入初始化。
+        /// </summary>
+        /// <returns>回應NLog初始化後實體。</returns>
         public Logger NLogInitialize()
         {
             // NLog configuration with appsettings.json
