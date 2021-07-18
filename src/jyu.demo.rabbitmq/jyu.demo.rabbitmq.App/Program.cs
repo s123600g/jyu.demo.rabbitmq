@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using System.Text;
 using RabbitMQ.Client.Events;
 using jyu.demo.rabbitmq.Utilities.Models;
+using jyu.demo.rabbitmq.Utilities.RMQ.PubSub;
 
 namespace jyu.demo.rabbitmq.App
 {
@@ -39,12 +40,36 @@ namespace jyu.demo.rabbitmq.App
 
             #endregion
 
+            #region Publish / Subscription Service Provider
+
+            var rmqPubSubProvider = _sp.GetService<IPubSubProvider>();
+
+            // Publish msg
+            rmqPubSubProvider.PubMessageForRMQ(
+                conn: _connectionStringRMQ.defaultRMQ,
+                exchangeName: "MyExchange",
+                exchangeType: ExchangeType.Direct,
+                routingKey: "MyRouting",
+                queueName: "MyPubMsg",
+                msg: "My first msg for publish",
+                _logger
+            );
+
+            // Received message
+            rmqPubSubProvider.SubMessageFromRMQ(
+                _connectionStringRMQ.defaultRMQ,
+                queueName: "MyPubMsg",
+                _logger
+            );
+
+            #endregion
+
             // Send / Get Queue Sample
             //SendHelloWordForRMQ(_connectionStringRMQ.defaultRMQ);
             //GetHelloWordForRMQ(_connectionStringRMQ.defaultRMQ);
 
             // Publish / Subscription for RMQ
-            PubSubMessageForRMQ(_connectionStringRMQ.defaultRMQ);
+            //PubSubMessageForRMQ(_connectionStringRMQ.defaultRMQ);
 
             _logger.Info("The app process was stopped.");
         }
@@ -134,7 +159,6 @@ namespace jyu.demo.rabbitmq.App
                 Console.ReadLine();
             }
         }
-
 
         public static void SendHelloWordForRMQ(
              ConnectionStringRMQ_Detail conn

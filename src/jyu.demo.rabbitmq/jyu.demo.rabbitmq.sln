@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jyu.demo.rabbitmq.Init", "j
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jyu.demo.rabbitmq.Utilities", "jyu.demo.rabbitmq.Utilities", "{F7F93B8A-8BE1-4689-974D-6031424310CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jyu.demo.rabbitmq.Init", "jyu.demo.rabbitmq.Init\jyu.demo.rabbitmq.Init.csproj", "{B7569F23-7E52-485A-81DB-E853AE994925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jyu.demo.rabbitmq.Init", "jyu.demo.rabbitmq.Init\jyu.demo.rabbitmq.Init.csproj", "{B7569F23-7E52-485A-81DB-E853AE994925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jyu.demo.rabbitmq.Utilities", "jyu.demo.rabbitmq.Utilities\jyu.demo.rabbitmq.Utilities.csproj", "{F1FC0500-4889-4901-959F-672598CD3F5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jyu.demo.rabbitmq.Utilities", "jyu.demo.rabbitmq.Utilities\jyu.demo.rabbitmq.Utilities.csproj", "{F1FC0500-4889-4901-959F-672598CD3F5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jyu.demo.rabbitmq.App", "jyu.demo.rabbitmq.App\jyu.demo.rabbitmq.App.csproj", "{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jyu.demo.rabbitmq.App", "jyu.demo.rabbitmq.App\jyu.demo.rabbitmq.App.csproj", "{6BC7CA77-3DB7-4045-8C75-0A37787CE4F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

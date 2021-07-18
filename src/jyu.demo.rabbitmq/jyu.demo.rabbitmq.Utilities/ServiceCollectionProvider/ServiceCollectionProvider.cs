@@ -1,4 +1,5 @@
 ﻿using jyu.demo.rabbitmq.Init.InitializeSettings;
+using jyu.demo.rabbitmq.Utilities.RMQ.PubSub;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -26,8 +27,8 @@ namespace jyu.demo.rabbitmq.Utilities.ServiceCollectionProvider
         /// </returns>
         public ServiceProvider GetServicesExtensionEntity()
         {
-
             _services.AddSingleton<ILoadSettings, LoadSettings>();
+            _services.AddSingleton<IPubSubProvider, PubSubProvider>();
 
             var _sp = _services.BuildServiceProvider();
 
