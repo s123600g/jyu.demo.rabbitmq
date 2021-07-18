@@ -19,13 +19,13 @@ jobs:
       - name: Show current file list
         run: ls
 
-      - name: Show jyu.demo.rabbitmq.App file lsit
-        run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
-      - name: Restore dependencies - jyu.demo.rabbitmq.App
-        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
-      - name: Build jyu.demo.rabbitmq.App
-        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App --no-restore
-  
+      - name: Show jyu.demo.rabbitmq.Utilities file lsit
+        run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities
+      - name: Restore dependencies - jyu.demo.rabbitmq.Utilities
+        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities
+      - name: Build jyu.demo.rabbitmq.Utilities
+        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities --no-restore
+
       - name: Show jyu.demo.rabbitmq.Init file lsit
         run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Init
       - name: Restore dependencies - jyu.demo.rabbitmq.Init
@@ -33,9 +33,9 @@ jobs:
       - name: Build jyu.demo.rabbitmq.Init
         run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Init --no-restore
 
-      - name: Show jyu.demo.rabbitmq.Utilities file lsit
-        run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities
-      - name: Restore dependencies - jyu.demo.rabbitmq.Utilities
-        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities
-      - name: Build jyu.demo.rabbitmq.Utilities
-        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.Utilities --no-restore
+      - name: Show jyu.demo.rabbitmq.App file lsit
+        run: ls ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
+      - name: Restore dependencies - jyu.demo.rabbitmq.App
+        run: dotnet restore ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App
+      - name: Build jyu.demo.rabbitmq.App
+        run: dotnet build ./src/jyu.demo.rabbitmq/jyu.demo.rabbitmq.App --no-restore
